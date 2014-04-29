@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/ScrollView01" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout04" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginRight="10.0px" android:text="While this application is designed to make listening to your music safer and easier while driving it is very important you still give the road your full attention and any use of electronic devices while driving is not recommended. By using this application you agree to use it at your own risk and the devlopers take no responsibility for the results of using this application. Keep your eyes on the road and drive safe!" />
+            <LinearLayout android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0px">
+                <LinearLayout android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <CheckBox android:id="@id/cbNeverShow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Never show again " />
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:id="@id/LinearLayout03" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <Button android:id="@id/btnAccept" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Ok" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

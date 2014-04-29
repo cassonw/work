@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/widget_instruc_layout" android:background="@drawable/white_back" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrllvwNo1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/widget_instruc_layout" android:background="@drawable/white_back" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/rules_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rules_title" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            <TextView android:textStyle="bold" android:textColor="#ff000000" android:id="@id/objective" android:paddingTop="20.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Objective of the Game" android:layout_below="@id/rules_title" android:layout_alignParentLeft="true" />
+            <TextView android:textColor="#ff000000" android:id="@id/objective_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/objective" android:layout_alignParentLeft="true" />
+            <TextView android:textStyle="bold" android:textColor="#ff000000" android:id="@id/rules" android:paddingTop="20.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rules" android:layout_below="@id/objective_content" android:layout_alignParentLeft="true" />
+            <TextView android:textColor="#ff000000" android:id="@id/rules_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/rules" android:layout_alignParentLeft="true" />
+            <TextView android:textStyle="bold" android:textColor="#ff000000" android:id="@id/scoring" android:paddingTop="20.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Scoring" android:layout_below="@id/rules_content" android:layout_alignParentLeft="true" />
+            <TextView android:textColor="#ff000000" android:id="@id/scoring_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/scoring" android:layout_alignParentLeft="true" />
+            <TextView android:textStyle="bold" android:textColor="#ff000000" android:id="@id/example" android:paddingTop="20.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Example" android:layout_below="@id/scoring_content" android:layout_alignParentLeft="true" />
+            <TextView android:textColor="#ff000000" android:id="@id/example_content1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/example" android:layout_alignParentLeft="true" />
+            <ImageView android:id="@id/example_content_pic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ans" android:layout_below="@id/example_content1" android:layout_alignParentLeft="true" />
+            <TextView android:textColor="#ff000000" android:id="@id/example_content2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/example_content_pic" android:layout_alignParentLeft="true" />
+            <ImageView android:id="@id/example_content_pic2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/guess" android:layout_below="@id/example_content2" android:layout_alignParentLeft="true" />
+            <TextView android:textColor="#ff000000" android:id="@id/thanks" android:paddingTop="20.0px" android:paddingRight="20.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Special thanks to DeGraeve.com" android:layout_below="@id/example_content_pic2" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

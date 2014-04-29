@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/widget_about_layout" android:background="@drawable/white_back" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/about_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/about_title" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/portrait" android:paddingTop="20.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/brain" android:layout_below="@id/about_title" android:layout_centerHorizontal="true" />
+    <TextView android:textColor="#ff000000" android:id="@id/game_name" android:paddingTop="20.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mastermind v2.2.4" android:layout_below="@id/portrait" android:layout_centerHorizontal="true" />
+    <TextView android:textColor="#ff000000" android:id="@id/maize" android:paddingRight="10.0px" android:paddingBottom="10.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="powered by Maize" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

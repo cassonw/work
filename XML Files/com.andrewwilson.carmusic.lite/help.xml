@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/ScrollView01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <TextView android:id="@id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0px" android:text="Help" style="@style/subTitle" />
+                <TextView android:id="@id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0px" android:text="Car Music is designed to be as user friendly as possible, but here is a few pointers on how to get the best out of it." />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <TextView android:id="@id/TextView05" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0px" android:text="Finding your music" style="@style/subTitle" />
+                <TextView android:id="@id/TextView06" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0px" android:text="If you just want to get straight into playing all of your music then you should head straight for the Shuffle button. This is very easy to find as it is found on the main menu and should take up half of your screen. Give this a prod and all of your music will start playing randomly, great when you are in a rush." android:layout_weight="1.0" />
+                <TextView android:id="@id/TextView04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0px" android:text="If you fancy something in particular then select from the Artist, Album or Playlist buttons to view what you hvae on your device. Browsing these menus is a breeze just select what you want and it'll expand until you finally see a list of tracks, select the one you want (or the shuffle all button) and it'll start playing. " />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <TextView android:id="@id/TextView03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0px" android:text="The Player" style="@style/subTitle" />
+                <TextView android:id="@id/TextView07" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0px" android:text="The main feature of the player is it's 3 buttons, press them to perform the action displayed on them. You can't miss! These buttons also allow you to &quot;draw&quot; a gesture over them, these gestures perform different actions such as Next, Previous, Shuffle or Voice Control. More information on gestures is listed below." />
+                <TextView android:id="@id/TextView08" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0px" android:text="The other feature of the player is the ability to drag the Track Details panel left and right. Dragging left will display the Playlist Viewer, where you can select a track from the playlist to start playing it. Dragging up and down on this panel will scroll the playlist up and down so you can select a track. Dragging the Trrack Details to the right will display the application Options. Here you can press buttons to change the volume, seek through a track, shuffle the playlist, change the options, set a sleep timer, and more." />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <TextView android:id="@id/TextView03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0px" android:text="Gestures" style="@style/subTitle" />
+                <TextView android:id="@id/TextView03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0px" android:text="Gestures are can be 'drawn' over the player controls to perform actions. Draw the following icons to perform the corresponding actions. The horizontal layout of the player suits gestures as there is a lot more room to draw out your gesture." />
+                <LinearLayout android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0px">
+                    <ImageView android:id="@id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px" android:src="@drawable/gesshuffle" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout01" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                        <TextView android:id="@id/TextView10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Shuffle" style="@style/subTitle" />
+                        <TextView android:id="@id/TextView09" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Randomly plays every track in your library, great for when you need music. FAST!" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0px">
+                    <ImageView android:id="@id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px" android:src="@drawable/gesprevious" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@id/TextView10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Previous" style="@style/subTitle" />
+                        <TextView android:id="@id/TextView09" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Draw a horizontal line from right to left to go to the previous track in your playlist." />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0px">
+                    <ImageView android:id="@id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px" android:src="@drawable/gespause" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@id/TextView10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pause/Play" style="@style/subTitle" />
+                        <TextView android:id="@id/TextView09" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pauses and Resumes the currently playing track" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0px">
+                    <ImageView android:id="@id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px" android:src="@drawable/gesnext" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@id/TextView10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Next" style="@style/subTitle" />
+                        <TextView android:id="@id/TextView09" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Draw a horizontal line from left to right to go to the next track in the playlist." />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0px">
+                    <ImageView android:id="@id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px" android:src="@drawable/gesvoice" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@id/TextView10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Voice Control" style="@style/subTitle" />
+                        <TextView android:id="@id/TextView09" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Draw a circle to activate voice control.  You can now give controls via voice such as &quot;Next&quot;, &quot;Previous&quot;, &quot;Shuffle&quot; and &quot;Pause&quot;." />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0px">
+                    <ImageView android:id="@id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px" android:src="@drawable/gesvolume" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@id/TextView10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Volume" style="@style/subTitle" />
+                        <TextView android:id="@id/TextView09" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Draw a V to bring up the volume control." />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0px">
+                    <ImageView android:id="@id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px" android:src="@drawable/gesseek" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@id/TextView10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Seek" style="@style/subTitle" />
+                        <TextView android:id="@id/TextView09" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Draw an S to bring up the seek control." />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0px">
+                    <ImageView android:id="@id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px" android:src="@drawable/gesback" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@id/TextView10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Back" style="@style/subTitle" />
+                        <TextView android:id="@id/TextView09" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Draw from Left to right and back again to go back a screen." />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0px">
+                    <ImageView android:id="@id/ImageView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px" android:src="@drawable/gesnightmode" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:id="@id/TextView10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Night Mode" style="@style/subTitle" />
+                        <TextView android:id="@id/TextView09" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A crescent shape will enable and disable night mode, night mode will dim the screen to reduce glare when driving at night." />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:id="@id/TextView11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0px" android:text="About" style="@style/subTitle" />
+                <TextView android:id="@id/TextView12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0px" android:text="Car Music was developed by Andrew Wilson. If you encounter a bug or would like a feaure implemented then please contact me on the detials below and I'll try and accomodate you. Thank you for using CarMusic." />
+                <Button android:textSize="24.0px" android:textColor="@color/White" android:id="@id/btnSiteLink" android:background="@drawable/empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginBottom="10.0px" android:text="www.androidcarmusic.com" />
+                <Button android:textSize="24.0px" android:textColor="@color/White" android:id="@id/btnEmailLink" android:background="@drawable/empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginBottom="10.0px" android:text="anappbyAW@gmail.com" />
+                <TextView android:id="@id/TextView13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0px" android:text="I would also like to give a big thank you to New Riot for allowing me to use their debut album &quot;Riot.Sleep.Repeat&quot; as part of my promotional material. Check them out at their MySpace below and help support the independant music scene by buying an album or check them out at one of thier shows." />
+                <Button android:textSize="24.0px" android:textColor="@color/White" android:id="@id/btnNewRiot" android:background="@drawable/empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginBottom="10.0px" android:text="New Riot MySpace" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

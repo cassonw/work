@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/widgetHolder" android:background="@color/invisible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/RelativeLayout01" android:background="@drawable/bg" android:layout_width="147.0dip" android:layout_height="147.0dip">
+        <ImageView android:id="@id/widgetBG" android:background="@drawable/missingimage" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:cropToPadding="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageButton android:id="@id/btnWidgetPause" android:background="@drawable/empty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/shuffle_lone" android:layout_weight="1.0" style="@style/widgetButton" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageButton android:id="@id/btnWidgetPrev" android:background="@drawable/empty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icon" android:layout_weight="1.0" style="@style/widgetButton" />
+                <ImageButton android:id="@id/btnWidgetNext" android:background="@drawable/empty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icon" android:layout_weight="1.0" style="@style/widgetButton" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/widgetTextHolder" android:background="@color/Transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="2.0dip" android:layout_below="@id/LinearLayout01">
+        <TextView android:textColor="@color/White" android:id="@id/txtWidgetTrack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No track" android:singleLine="true" />
+        <TextView android:id="@id/txtWidgetArtist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Loaded" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

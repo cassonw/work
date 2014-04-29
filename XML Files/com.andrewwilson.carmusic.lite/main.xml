@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/background" android:background="@drawable/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.0">
+        <ImageButton android:id="@id/btnShuffle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/shuffle" android:text="Shuffle" android:layout_weight="2.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.0">
+        <LinearLayout android:id="@id/LinearLayout04" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.0">
+            <ImageButton android:id="@id/btnArtists" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/artists" android:text="Artists" android:layout_weight="2.0" />
+            <ImageButton android:id="@id/btnAlbums" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/albums" android:text="Albums" android:layout_weight="2.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/LinearLayout03" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.0">
+            <ImageButton android:id="@id/btnPlaylists" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/playlists" android:text="Playlists" android:layout_weight="2.0" />
+            <ImageButton android:id="@id/btnNowPlaying" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/nowplaying" android:text="Now Playing" android:layout_weight="2.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.admob.android.ads.AdView android:id="@id/ad" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</LinearLayout>

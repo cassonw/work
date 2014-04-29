@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/widget_layout" android:background="@drawable/front_back" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/mastermind" android:paddingTop="20.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/title2" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/space2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/left_space" android:layout_below="@id/mastermind" android:layout_centerHorizontal="true" />
+    <ImageButton android:gravity="center_horizontal" android:id="@id/instruc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/instruc_text" android:layout_below="@id/space2" android:layout_centerHorizontal="true" />
+    <ImageButton android:id="@id/start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/start_text" android:layout_toLeftOf="@id/instruc" android:layout_alignTop="@id/instruc" />
+    <ImageButton android:id="@id/stats" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/stats_text" android:layout_toRightOf="@id/instruc" android:layout_alignTop="@id/instruc" />
+    <TextView android:textColor="#ff000000" android:id="@id/maize" android:paddingRight="10.0px" android:paddingBottom="10.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="powered by Maize" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

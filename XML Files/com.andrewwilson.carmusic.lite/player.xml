@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:orientation="vertical" android:background="@drawable/bg" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.andrewwilson.carmusic.CarHorizontalScroll android:id="@id/topScroller" android:fadingEdgeLength="0.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="5.0">
+        <LinearLayout android:orientation="horizontal" android:id="@id/topholder" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ScrollView android:id="@id/settingsScroller" android:background="@drawable/optionsfade" android:layout_width="170.0px" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:id="@id/settingsHolder" android:paddingTop="10.0px" android:paddingRight="5.0px" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="vertical" android:id="@id/settingsHolder1" android:paddingRight="10.0px" android:layout_width="135.0px" android:layout_height="fill_parent">
+                        <ImageButton android:id="@id/btnSettings" android:layout_width="fill_parent" android:layout_height="110.0px" android:layout_marginBottom="10.0px" android:src="@drawable/settings" android:layout_weight="1.0" />
+                        <ImageButton android:id="@id/btnBrightness" android:layout_width="fill_parent" android:layout_height="110.0px" android:layout_marginBottom="10.0px" android:src="@drawable/brightness_high" android:layout_weight="1.0" />
+                        <ImageButton android:id="@id/btnArtists" android:layout_width="fill_parent" android:layout_height="110.0px" android:layout_marginBottom="10.0px" android:src="@drawable/artists" android:layout_weight="1.0" />
+                        <ImageButton android:id="@id/btnAlbums" android:layout_width="fill_parent" android:layout_height="110.0px" android:layout_marginBottom="10.0px" android:src="@drawable/albums" android:layout_weight="1.0" />
+                        <ImageButton android:id="@id/btnTimer" android:layout_width="fill_parent" android:layout_height="110.0px" android:layout_marginBottom="10.0px" android:src="@drawable/timer" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/settingsHolder2" android:paddingRight="5.0px" android:layout_width="135.0px" android:layout_height="fill_parent">
+                        <ImageButton android:id="@id/btnVolume" android:layout_width="fill_parent" android:layout_height="110.0px" android:layout_marginBottom="10.0px" android:src="@drawable/volume" android:layout_weight="1.0" />
+                        <ImageButton android:id="@id/btnShuffleEnabled" android:layout_width="fill_parent" android:layout_height="110.0px" android:layout_marginBottom="10.0px" android:src="@drawable/shuffle" android:layout_weight="1.0" />
+                        <ImageButton android:id="@id/btnSeek" android:layout_width="fill_parent" android:layout_height="110.0px" android:layout_marginBottom="10.0px" android:src="@drawable/seek" android:layout_weight="1.0" />
+                        <ImageButton android:id="@id/btnScreenOn" android:layout_width="fill_parent" android:layout_height="110.0px" android:layout_marginBottom="10.0px" android:src="@drawable/screenlockoff" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <LinearLayout android:orientation="vertical" android:id="@id/artHolder" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="5.0">
+                <LinearLayout android:id="@id/LinearLayout05" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.0">
+                    <LinearLayout android:gravity="top|right|center" android:layout_gravity="top|right|center" android:orientation="horizontal" android:id="@id/LinearLayout02" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <com.admob.android.ads.AdView android:id="@id/ad" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:id="@id/trackNo" android:background="@color/Transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/subTitle" />
+                            <TextView android:id="@id/TextView01" android:background="@color/Transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" / " style="@style/subTitle" />
+                            <TextView android:id="@id/noOfTracks" android:background="@color/Transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/subTitle" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:id="@id/LinearLayout04" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.0">
+                    <LinearLayout android:layout_gravity="bottom|left|center" android:orientation="vertical" android:id="@id/LinearLayout03" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TableLayout android:id="@id/TableLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TableRow android:id="@id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:id="@id/txtArtist" android:background="@color/Transparent" android:paddingRight="10.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/subTitle" />
+                            </TableRow>
+                            <TableRow android:id="@id/TableRow02" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:id="@id/txtAlbum" android:background="@color/Transparent" android:paddingRight="10.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/subTitle" />
+                            </TableRow>
+                            <TableRow android:id="@id/TableRow03" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:id="@id/txtTrack" android:background="@color/Transparent" android:paddingRight="10.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Title" />
+                            </TableRow>
+                        </TableLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/playlistHolder" android:background="@drawable/bevelledglassbuttonhover" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ListView android:id="@id/playlist" android:fadingEdgeLength="0.0px" android:descendantFocusability="blocksDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content" android:cacheColorHint="#ff838783" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.andrewwilson.carmusic.CarHorizontalScroll>
+    <LinearLayout android:id="@id/controlHolder" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="10.0">
+        <FrameLayout android:id="@id/frameLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="top" android:id="@id/mirror" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/missingimage" android:scaleType="fitXY" />
+            <android.gesture.GestureOverlayView android:id="@id/gestures" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:id="@id/LinearLayout01" android:background="@drawable/gradient" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageButton android:id="@id/btnPrev" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/previous" android:layout_weight="5.0" />
+                    <ImageButton android:id="@id/btnPlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/play" android:layout_weight="5.0" />
+                    <ImageButton android:id="@id/btnNext" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/next" android:layout_weight="5.0" />
+                </LinearLayout>
+            </android.gesture.GestureOverlayView>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>
