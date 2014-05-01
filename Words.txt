@@ -1,0 +1,6 @@
+Project: com.andrewwilson.carmusic.lite
+main.xml:
+ImageButton has text attribute
+Project: com.android.lt.tictactoe
+tic_tac_toe.xml:
+ImageButton tags have an tag attribute, though the tag is not descriptive enough.
