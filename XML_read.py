@@ -28,14 +28,31 @@ def getXMLPathsFromPathList(paths):
 def createTree(path):
     """This method takes a path to am XML file and returns an ElementTree."""
     return ET.parse(path)
+
+def findElementsByTagList(tree, tags):
+    """This method takes a tree and a list of tags and returns a list of elements with a tag that is in the tag list."""
+    elements = []
+    for tag in tags:
+        elements.extend(tree.findall(tag))
+    return elements
+
+def findImageElements(tree, tags=["ImageButton", "ImageLayout"]):
+    """This method takes a ElementTree and returns a list of elements in that tree that are image-based objects."""
+    return findElementsByTagList(tree, tags)
+
 def main():
     packages = getSubDirs()
     xml_paths = getXMLPathsFromPathList(packages)
     trees = []
     for path in xml_paths:
         trees.append(createTree(path))
+    keys = set()
     for tree in trees:
-        print tree.getroot()
+        elements = findImageElements(tree)
+        for element in elements:
+            keys.update(element.keys())
+    for key in keys:
+        print key
 
 if __name__ == "__main__":
     main()
