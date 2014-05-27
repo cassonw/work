@@ -33,7 +33,7 @@ def findElementsByTagList(tree, tags):
     """This method takes a tree and a list of tags and returns a list of elements with a tag that is in the tag list."""
     elements = []
     for tag in tags:
-        elements.extend(tree.findall(tag))
+        elements.extend(tree.iter(tag))
     return elements
 
 def findImageElements(tree, tags=["ImageButton", "ImageLayout"]):
@@ -51,8 +51,9 @@ def main():
         elements = findImageElements(tree)
         for element in elements:
             keys.update(element.keys())
-    for key in keys:
-        print key
+#    for key in keys:
+#        print key
+    return {"keys": keys, "trees": trees, "packages": packages}
 
 if __name__ == "__main__":
     main()
